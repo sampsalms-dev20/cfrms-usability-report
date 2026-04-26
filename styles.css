@@ -112,7 +112,7 @@ nav a:hover {
   padding: 30px;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -120,7 +120,6 @@ footer {
   margin-top: auto;
 }
 
-/* Container for ring*/
 .logo-container {
   position: relative;
   display: inline-block;
@@ -128,7 +127,7 @@ footer {
   margin-bottom: 0px;
 }
 
-/* Logo itself */
+/* Logo */
 .logo {
   position: relative;
   width: 300px;
@@ -229,20 +228,19 @@ footer {
 /* Bottom grid (video + usability) */
 .bottom-grid {
   display: flex;
-  justify-content: space-between; /* pushes them apart */
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 40px; /* space between the two */
+  gap: 40px;
   margin-top: 30px;
 }
 
 .card {
-  flex: 1; /* both take equal width */
+  flex: 1;
   padding: 20px;
   background:  rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
-/* Optional: limit video size */
 .video-box {
   width: 100%;
   max-width: 100%;
