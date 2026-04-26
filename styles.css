@@ -21,7 +21,7 @@ nav h2 {
 /* Right side links */
 nav div {
   display: flex;
-  align-items: center; /*ensures links align with title */
+  align-items: center;
   gap: 25px;
 }
 
@@ -39,7 +39,7 @@ nav a:hover {
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 10px; /* controls distance between logo and text */
+  gap: 10px;
 }
 
 /* Remove extra spacing from title */
@@ -190,12 +190,12 @@ footer {
 
 /* Summary layout */
 .chart-container {
-  background: rgba(0, 0, 0, 0.3); /* 👈 black background */
+  background: rgba(0, 0, 0, 0.3);
   padding: 20px;
   border-radius: 12px;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
@@ -213,11 +213,11 @@ footer {
 }
 
 .page-title {
-  margin-bottom: 5px; /* reduce space below Data Gathering */
+  margin-bottom: 5px;
 }
 
 .section {
-  margin-top: 0px; /* bring Survey Instruments closer */
+  margin-top: 0px;
 }
 
 .sub-title,
