@@ -87,12 +87,9 @@ nav a:hover {
 .card {
   background: rgba(0, 0, 0, 0.247);
   border-radius: 10px;
+  flex: 1;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.card:hover {
-  transform: translateY(-5px);
 }
 
 /* MEMBER CARD */
@@ -112,7 +109,7 @@ nav a:hover {
   padding: 30px;
 }
 
-/* Footer */
+/* Footer styling */
 footer {
   text-align: center;
   padding: 20px;
@@ -120,6 +117,7 @@ footer {
   margin-top: auto;
 }
 
+/* Container for ring*/
 .logo-container {
   position: relative;
   display: inline-block;
@@ -127,7 +125,7 @@ footer {
   margin-bottom: 0px;
 }
 
-/* Logo */
+/* Logo itself */
 .logo {
   position: relative;
   width: 300px;
@@ -230,21 +228,24 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 40px;
+  gap: 50px;
   margin-top: 30px;
 }
 
-.card {
-  flex: 1;
-  padding: 20px;
+.video-card {
+  padding: 30px;
   background:  rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  flex-direction: column;
+  align-items: flex;
+  font-size: 20px;
 }
 
+/* Optional: limit video size */
 .video-box {
   width: 100%;
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 /*consent form button */
