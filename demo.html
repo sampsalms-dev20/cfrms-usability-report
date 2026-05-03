@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Demo | CFRMS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-left"><h2>CFRMS</h2></div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="data.html">Data Gathering</a>
+    <a href="results.html">Results</a>
+    <a href="demo.html" class="active">System Demo</a>
+  </div>
+</nav>
+
+<header class="hero sub-hero">
+  <div class="hero-content">
+    <h1>Prototype Walkthrough</h1>
+    <p class="subtitle">Video Demonstration & Evaluation Reflections</p>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- VIDEO DEMONSTRATION SECTION -->
+  <section class="section-container">
+    <div class="card video-card" style="max-width: 900px; margin: 0 auto;">
+      <video controls class="video-box" poster="logo.png">
+        <source src="demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div style="text-align: left; margin-top: 25px;">
+        <h3 style="color: #00ff8c;">Official Video Demonstration</h3>
+        <p style="opacity: 0.8; margin-top: 10px;">
+          Narrated by Nick G. Pempeña I, this walkthrough demonstrates the core logic of the CFRMS prototype. 
+          It highlights the transition from manual ledger entries to digital transactions, showcasing the 
+          user flow and the automated reporting features evaluated by our participants.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROTOTYPE HIGHLIGHTS (Logic Flow) -->
+  <section class="section-container">
+    <h2 class="section-title">System Logic & Walkthrough Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>User Authentication</h4>
+        <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 10px;">Secure login flow for Church Treasurers to ensure data integrity and prevent unauthorized record modification.</p>
+      </div>
+      <div class="card">
+        <h4>Transaction Management</h4>
+        <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 10px;">Demonstration of recording Tithes and Expenses, featuring real-time balance updates and error prevention.</p>
+      </div>
+      <div class="card">
+        <h4>Report Generation</h4>
+        <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 10px;">The automated process of converting raw transaction data into a structured financial summary for church transparency.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM REFLECTIONS (Optional Extra in Rubric) -->
+  <section class="section-container">
+    <h2 class="section-title">Team Reflections</h2>
+    <div class="card recommendation-box" style="text-align: left;">
+      <p>Transforming the <strong>CFRMS Prototype</strong> into a documented platform allowed us to bridge the gap between technical design and user-centered reality. The most significant realization during the <strong>Heuristic Evaluation</strong> was how easily design team members can overlook simple usability flaws that actual users find immediately.</p>
+      <p style="margin-top: 15px;">Conducting testing with <strong>BSMath students</strong> taught us the value of <em>"Natural Match"</em>; while we used technical terms, our users looked for accounting language they recognized. This project has strengthened our front-end development skills and our understanding of <strong>Jakob Nielsen’s 10 Heuristics</strong> as a vital tool for preventing real-world system failure.</p>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE LINK (Bonus Documentation) -->
+  <section class="section-container" style="text-align: center;">
+    <div class="card" style="max-width: 600px; margin: 0 auto; border: 1px dashed #00ff8c;">
+      <h3>Interactive Figma Prototype</h3>
+      <p style="margin: 15px 0; font-size: 0.9rem; opacity: 0.8;">Click below to access the live interactive prototype used during our usability testing phase.</p>
+      <a href="YOUR_FIGMA_LINK_HERE" target="_blank" class="btn">🔗 Launch Figma File</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Church Financial Records Management System | Partido State University</p>
+</footer>
+
+</body>
+</html>
