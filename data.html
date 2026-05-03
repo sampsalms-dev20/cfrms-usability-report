@@ -10,74 +10,162 @@
 <body>
 
 <nav>
-  <div class="nav-left">
-    <h2>CFRMS</h2>
-  </div>
+  <div class="nav-left"><h2>CFRMS</h2></div>
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="data.html" class="active">Data Gathering</a>
     <a href="results.html">Results</a>
+    <a href="demo.html">System Demo</a>
   </div>
 </nav>
 
 <header class="hero sub-hero">
   <div class="hero-content">
     <h1>Data Gathering</h1>
-    <p class="subtitle">Research Methodology & Field Documentation</p>
+    <p class="subtitle">Respondents Information & Survey Instruments</p>
   </div>
 </header>
 
 <main class="container">
+
+  <!-- SECTION: RESPONDENT PROFILE SUMMARY (MERGED & UPDATED) -->
   <section class="section-container">
-    <h2 class="section-title">System Evaluation Form</h2>
-    <div class="card form-card small-view">
-      <div class="form-header">
-        <h3>User Feedback</h3>
-        <p>Please complete the survey below.</p>
+    <h2 class="section-title">Respondent Profile Summary</h2>
+    <div class="grid">
+      <!-- Merged Card: Participation & Consent -->
+      <div class="card stat-card">
+        <div class="img-wrapper" style="height: 150px; margin-bottom: 15px;">
+          <img src="result-consent.jpeg" alt="Participation Chart" style="object-fit: contain; background: white;">
+        </div>
+        <h3>14 (100%)</h3>
+        <p>Consented Participants</p>
+        <div class="progress-bg"><div class="progress-fill" style="width: 100%;"></div></div>
       </div>
-      <div class="iframe-container">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfxwraObmqo5k9GAPYGqkIvyLb5BTO5nsyAgBqWsxRniMxCNw/viewform?embedded=true" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+      <!-- Experience Card -->
+      <div class="card stat-card">
+        <div class="img-wrapper" style="height: 150px; margin-bottom: 15px;">
+          <img src="result-experience.jpeg" alt="Experience Chart" style="object-fit: contain; background: white;">
+        </div>
+        <h3>85.7%</h3>
+        <p>Prior System Experience</p>
+        <div class="progress-bg"><div class="progress-fill" style="width: 85.7%;"></div></div>
+      </div>
+
+      <!-- New Card: Tech Frequency (based on your data) -->
+      <div class="card stat-card">
+        <div class="img-wrapper" style="height: 150px; margin-bottom: 15px;">
+          <img src="result-tech.jpeg" alt="Tech Usage Chart" style="object-fit: contain; background: white;">
+        </div>
+        <h3>64.3%</h3>
+        <p>Daily Technology Usage</p>
+        <div class="progress-bg"><div class="progress-fill" style="width: 64.3%;"></div></div>
       </div>
     </div>
   </section>
 
+  <!-- SECTION: RESPONDENT RAW DATA -->
+  <section class="section-container">
+    <h2 class="section-title">Respondent Raw Data</h2>
+    <div class="card table-card">
+      <div class="card-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <p style="opacity: 0.7;">Live .CSV Repository Preview</p>
+        <a href="responses.csv" download class="btn small-btn">📥 Download responses.csv</a>
+      </div>
+      <div class="table-wrapper">
+        <table class="data-table" id="csv-table">
+          <thead>
+            <tr id="table-header"></tr>
+          </thead>
+          <tbody id="table-body">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: SURVEY INSTRUMENTS -->
   <section class="section-container">
     <h2 class="section-title">Survey Instruments</h2>
-    <div class="card download-card">
-      <div class="card-info">
-        <h3>Consent Form & SUS Questionnaire</h3>
-        <p>Document includes formal participant consent and the System Usability Scale (SUS) instrument.</p>
+    <div class="grid chart-grid-double">
+      <div class="card download-card">
+        <div class="card-info">
+          <h3>Usability Testing Survey (SUS)</h3>
+          <p>Document includes formal participant consent and the 10-item System Usability Scale instrument.</p>
+        </div>
+        <a href="Consent-Form-SUS-Questionnaire_Group2.pdf" download class="btn">📄 Download PDF</a>
       </div>
-      <a href="Consent-Form-SUS-Questionnaire_Group2.pdf" download class="btn">📄 Download PDF</a>
+      <div class="card download-card">
+        <div class="card-info">
+          <h3>Heuristic Evaluation Workbook</h3>
+          <p>Nielsen's 10 Heuristics workbook containing individual evaluations from all group members.</p>
+        </div>
+        <a href="Heuristic-Workbook.pdf" download class="btn">📄 Download PDF</a>
+      </div>
     </div>
   </section>
 
+  <!-- SECTION: FIELD DOCUMENTATION -->
   <section class="section-container">
-    <h2 class="section-title">Documentation</h2>
+    <h2 class="section-title">Field Documentation</h2>
     <div class="grid">
       <div class="card doc-card">
-        <div class="img-wrapper"><img src="doc1.jpg" alt="Laptop"></div>
-        <p class="img-caption">Prototype in Laptop</p>
+        <div class="img-wrapper"><img src="doc1.jpg" alt="Testing"></div>
+        <p class="img-caption">BSMath Testing Session</p>
       </div>
       <div class="card doc-card">
-        <div class="img-wrapper"><img src="doc2.jpg" alt="Intro"></div>
-        <p class="img-caption">Project Introduction: BSMath Students</p>
+        <div class="img-wrapper"><img src="doc2.jpg" alt="Moderating"></div>
+        <p class="img-caption">Guided Evaluation Process</p>
       </div>
       <div class="card doc-card">
         <div class="img-wrapper"><img src="doc3.jpg" alt="Demo"></div>
-        <p class="img-caption">Prototype Demo</p>
+        <p class="img-caption">CFRMS Prototype Walkthrough</p>
       </div>
       <div class="card doc-card">
-        <div class="img-wrapper"><img src="doc4.png" alt="Data Gathering"></div>
-        <p class="img-caption">Data Gathering Session</p>
+        <div class="img-wrapper"><img src="doc4.png" alt="Recording"></div>
+        <p class="img-caption">Final Data Collection</p>
       </div>
     </div>
   </section>
+
 </main>
 
 <footer>
-  <p>© 2026 Church Financial Records Management System | Lahing Pinagpala Nation</p>
+  <p>© 2026 Church Financial Records Management System | Partido State University</p>
 </footer>
+
+<script>
+  async function loadCSV() {
+    try {
+      const response = await fetch('responses.csv');
+      const data = await response.text();
+      const rows = data.split('\n').filter(row => row.trim() !== '');
+      
+      const headerRow = rows[0].split(',');
+      const headerTarget = document.getElementById('table-header');
+      headerRow.forEach(headerText => {
+        const th = document.createElement('th');
+        th.textContent = headerText.replace(/"/g, '');
+        headerTarget.appendChild(th);
+      });
+
+      const bodyTarget = document.getElementById('table-body');
+      for (let i = 1; i < rows.length; i++) {
+        const tr = document.createElement('tr');
+        const cols = rows[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
+        cols.forEach(colText => {
+          const td = document.createElement('td');
+          td.textContent = colText.replace(/"/g, '');
+          tr.appendChild(td);
+        });
+        bodyTarget.appendChild(tr);
+      }
+    } catch (error) {
+      console.error("Error loading CSV:", error);
+    }
+  }
+  window.onload = loadCSV;
+</script>
 
 </body>
 </html>
