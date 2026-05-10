@@ -121,15 +121,32 @@
         <div class="img-wrapper"><img src="doc3.jpg" alt="Demo"></div>
         <p class="img-caption">CFRMS Prototype Walkthrough</p>
       </div>
-      <div class="card doc-card">
-        <div class="img-wrapper"><img src="doc4.png" alt="Recording"></div>
-        <p class="img-caption">Final Data Collection</p>
+     <div class="card doc-card gallery-card" onclick="openGallery()">
+      <div class="img-wrapper">
+        <img src="doc4.png" alt="Recording">
       </div>
+      <p class="img-caption">Final Data Collection</p>
+    </div>
     </div>
   </section>
 
 </main>
 
+  <div class="gallery-modal" id="galleryModal">
+
+  <span class="close-gallery" onclick="closeGallery()">✕</span>
+
+  <div class="gallery-content">
+    <img id="galleryImage" src="doc4.png" alt="Gallery Image">
+
+    <div class="gallery-controls">
+      <button onclick="prevImage()">⟨ Prev</button>
+      <button onclick="nextImage()">Next ⟩</button>
+    </div>
+  </div>
+
+</div>
+  
 <footer>
   <p>© 2026 Church Financial Records Management System | Partido State University</p>
 </footer>
