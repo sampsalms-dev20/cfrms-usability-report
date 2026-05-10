@@ -307,6 +307,128 @@ nav {
 .chart-card { padding: 15px; }
 .chart-img { width: 100%; border-radius: 12px; display: block; }
 
+
+/* =========================
+   CSV TABLE FIX
+========================= */
+
+.table-card{
+  overflow: hidden;
+}
+
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.table-wrapper{
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.03);
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.3) transparent;
+}
+
+.table-wrapper::-webkit-scrollbar{
+  height: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb{
+  background: rgba(255,255,255,0.25);
+  border-radius: 20px;
+}
+
+.data-table{
+  width: max-content;
+  min-width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.data-table thead{
+  background: rgba(0,0,0,0.35);
+}
+
+.data-table th,
+.data-table td{
+  padding: 16px 18px;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 13px;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  white-space: normal;
+  word-break: break-word;
+  min-width: 130px;
+}
+
+.data-table th{
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  font-weight: 800;
+  background: rgba(25, 15, 60, 0.95);
+}
+
+.data-table tbody tr{
+  transition: 0.3s ease;
+}
+
+.data-table tbody tr:hover{
+  background: rgba(255,255,255,0.05);
+}
+
+.data-table td{
+  font-weight: 500;
+  opacity: 0.92;
+}
+
+.small-btn{
+  background: white;
+  color: #2b2bbf;
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s ease;
+}
+
+.small-btn:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px){
+
+  .card-header{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .data-table th,
+  .data-table td{
+    padding: 12px;
+    font-size: 12px;
+    min-width: 100px;
+  }
+}
+
 footer {
   text-align: center;
   padding: 80px 20px;
