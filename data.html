@@ -182,6 +182,57 @@
     }
   }
   window.onload = loadCSV;
+
+  const galleryImages = [
+  "doc4.png",
+  "doc5.png",
+  "doc6.png",
+  "doc7.png"
+];
+
+let currentImage = 0;
+
+function openGallery(index = 0){
+  currentImage = index;
+
+  document.getElementById("galleryModal")
+    .classList.add("active");
+
+  updateGalleryImage();
+}
+
+function closeGallery(){
+  document.getElementById("galleryModal")
+    .classList.remove("active");
+}
+
+function updateGalleryImage(){
+  document.getElementById("galleryImage")
+    .src = galleryImages[currentImage];
+}
+
+function nextImage(){
+  currentImage = (currentImage + 1) % galleryImages.length;
+  updateGalleryImage();
+}
+
+function prevImage(){
+  currentImage =
+    (currentImage - 1 + galleryImages.length) %
+    galleryImages.length;
+
+  updateGalleryImage();
+}
+
+// Close when clicking outside image
+document.getElementById("galleryModal")
+.addEventListener("click", function(e){
+
+  if(e.target.id === "galleryModal"){
+    closeGallery();
+  }
+
+});
 </script>
 
 </body>
